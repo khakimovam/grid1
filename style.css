@@ -1,0 +1,15 @@
+.container {
+    display: grid;
+    grid-template-columns: 100px 30% 1fr;
+    grid-template-rows: 200px 100px;
+    grid-gap: 10px;
+}
+
+.item1,
+.item2,
+.item3,
+.item4,
+.item5,
+.item6 {
+    background-color: blue;
+}
