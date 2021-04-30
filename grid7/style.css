@@ -1,0 +1,40 @@
+.container {
+    display: grid;
+    height: 100%;
+    width: 100vw;
+    grid-template-rows: 10% 70% 10%;
+    grid-template-columns: 5% 70% 10%;
+    grid-gap: 5px;
+    grid-template-areas:
+        "menu header header header header"
+        "menu content content content add"
+        "menu content content content add"
+        "menu footer footer footer footer"
+    ;
+}
+
+
+.header {
+    background-color: yellow;
+    grid-area: header;
+}
+
+.content {
+    background-color: green;
+    grid-area: content;
+}
+
+.menu {
+    background-color: hotpink;
+    grid-area: menu;
+}
+
+.sidebar {
+    background-color: red;
+    grid-area: add;
+}
+
+.footer {
+    background-color: grey;
+    grid-area: footer;
+}
