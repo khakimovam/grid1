@@ -1,0 +1,66 @@
+.content {
+    display: grid;
+    width: 80vw;
+    height: 500px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 10% 20% 20% 20% 10%;
+    grid-gap: 5px;
+    text-align: center;
+    font-weight: bold;
+    grid-template-areas:
+        "header header header header"
+        "main main main aside"
+        "more1 . more2 aside"
+        "more3 more3 more3 aside"
+        "footer1 footer2 footer3 footer4";
+}
+
+.header {
+    background-color: lightgrey;
+    grid-area: header;
+}
+
+.main {
+    background-color: lightgoldenrodyellow;
+    grid-area: main;
+}
+
+.more1 {
+    background-color: rgb(252, 194, 143);
+    grid-area: more1;
+}
+
+.more2 {
+    background-color: rgb(252, 194, 143);
+    grid-area: more2;
+}
+
+.more3 {
+    background-color: rgb(252, 194, 143);
+    grid-area: more3;
+}
+
+.aside {
+    background-color: rgb(132, 219, 132);
+    grid-area: aside;
+}
+
+.footer1 {
+    background-color: lightgrey;
+    grid-area: footer1;
+}
+
+.footer2 {
+    background-color: lightgrey;
+    grid-area: footer2;
+}
+
+.footer3 {
+    background-color: lightgrey;
+    grid-area: footer3;
+}
+
+.footer4 {
+    background-color: lightgrey;
+    grid-area: footer4;
+}
